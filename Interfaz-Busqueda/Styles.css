@@ -39,9 +39,9 @@ body {
     text-align: center; /* Alinear el texto del logo al centro */
 }
 .logo {
-    font-size: 60px; /* Tamaño del texto del logo */
+    font-size: 80px; /* Tamaño del texto del logo */
     font-weight: bold; /* Hacer el texto del logo en negrita */
-    color: #4285f4; /* Color del texto del logo (azul de Google) */
+    color: #6bff78; /* Color del texto del logo (azul de Google) */
     margin-bottom: 20px;
 }
 .search-url input {
