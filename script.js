@@ -37,3 +37,23 @@ window.onload = function() {
     const emailInput = document.getElementById('correo');
     emailInput.addEventListener('input', validateEmail);
 }
+
+function validarFechas() {
+    // Obtener las fechas de emisión y vencimiento del pasaporte
+    var diaEmision = document.getElementById("dia_emision").value;
+    var mesEmision = document.getElementById("mes_emision").value;
+    var anioEmision = document.getElementById("anio_emision").value;
+    var diaVencimiento = document.getElementById("dia_vencimiento").value;
+    var mesVencimiento = document.getElementById("mes_vencimiento").value;
+    var anioVencimiento = document.getElementById("anio_vencimiento").value;
+
+    var fechaEmision = new Date(anioEmision, mesEmision - 1, diaEmision);
+    var fechaVencimiento = new Date(anioVencimiento, mesVencimiento - 1, diaVencimiento);
+
+    if (fechaVencimiento <= fechaEmision) {
+        alert("La fecha de vencimiento del pasaporte debe ser posterior a la fecha de emisión.");
+        return false; 
+    }
+
+    return true; 
+}
