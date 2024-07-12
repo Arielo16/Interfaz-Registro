@@ -3,7 +3,6 @@ function validatePhone(event) {
     const phoneValue = phoneInput.value;
     const errorMessage = document.getElementById('error-telefono');
 
-    // Remove all non-numeric characters
     phoneInput.value = phoneValue.replace(/\D/g, '');
 
     if (phoneInput.value.length > 10) {
@@ -20,7 +19,6 @@ function validateEmail(event) {
     const emailValue = emailInput.value;
     const errorMessage = document.getElementById('error-email');
 
-    // Check if the email contains '@'
     if (!emailValue.includes('@')) {
         errorMessage.style.display = 'block';
         emailInput.setCustomValidity("El correo electrónico debe contener el símbolo '@'");
@@ -39,7 +37,6 @@ window.onload = function() {
 }
 
 function validarFechas() {
-    // Obtener las fechas de emisión y vencimiento del pasaporte
     var diaEmision = document.getElementById("dia_emision").value;
     var mesEmision = document.getElementById("mes_emision").value;
     var anioEmision = document.getElementById("anio_emision").value;

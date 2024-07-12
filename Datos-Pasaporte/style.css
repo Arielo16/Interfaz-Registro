@@ -1,4 +1,3 @@
-/* Estilo básico para el cuerpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +5,6 @@ body {
     padding: 20px;
 }
 
-/* Centrar y dar estilo al formulario */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -16,33 +14,29 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el título principal */
 h1 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333; /* Color del texto del título */
+    color: #333; 
 }
 
-/* Estilo para las etiquetas */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555; /* Color del texto de las etiquetas */
+    color: #555;
 }
 
-/* Estilo para los inputs y selects */
 input[type="text"], input[type="email"], input[type="tel"], select {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: #666; /* Color del texto en los inputs y selects */
+    color: #666; 
 }
 
-/* Estilo para el botón de envío */
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -56,7 +50,6 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Estilo para mensajes de error */
 .error-message {
     color: red;
     font-size: 12px;
