@@ -1,37 +1,65 @@
+/* Estilo básico para el cuerpo */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-}
-form {
-    max-width: 500px;
-    margin: auto;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
 }
+
+/* Centrar y dar estilo al formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título principal */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto del título */
+}
+
+/* Estilo para las etiquetas */
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555; /* Color del texto de las etiquetas */
 }
+
+/* Estilo para los inputs y selects */
 input[type="text"], input[type="email"], input[type="tel"], select {
-    width: calc(33% - 10px);
-    padding: 8px;
-    margin: 5px;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    color: #666; /* Color del texto en los inputs y selects */
 }
+
+/* Estilo para el botón de envío */
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+/* Estilo para mensajes de error */
 .error-message {
     color: red;
+    font-size: 12px;
     display: none;
+    text-align: center;
 }
