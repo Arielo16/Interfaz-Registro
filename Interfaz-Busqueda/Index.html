@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bungle Search Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .search-url {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center; /* Alinear el texto del logo al centro */
+        }
+        .logo {
+            font-size: 24px; /* Tamaño del texto del logo */
+            font-weight: bold; /* Hacer el texto del logo en negrita */
+            color: #4285f4; /* Color del texto del logo (azul de Google) */
+            margin-bottom: 20px;
+        }
+        .search-url input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        .search-box {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+        .search-button {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #e0e0e0;
+        }
+        .tabs {
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center; /* Centrar los tabs */
+        }
+        .tabs ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Centrar los elementos de la lista */
+        }
+        .tabs li {
+            margin-right: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .tabs li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <span>User123</span>
+        </div>
+        <div class="search-url">
+            <input type="text" placeholder="Search or enter address">
+        </div>
+    </div>
+    <div class="tabs">
+        <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Images</li>
+            <li>Videos</li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="logo">Bungle</div>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <div class="search-box">
+                <input type="text" name="q" class="search-input" placeholder="Search Bungle">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
