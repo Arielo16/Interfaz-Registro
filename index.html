@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PHP</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <h1>Formulario Datos</h1>
+        <form acction="#" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+
+            <label for="fecha_nacimiento">Fecha De Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <span id="error-email" class="error-message">El correo electrónico debe contener el símbolo '@'</span>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="\d{10}" title="El número de teléfono debe contener exactamente 10 dígitos" required>
+            <span id="error-telefono" class="error-message">El número de teléfono debe contener exactamente 10 dígitos</span>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+        <script src="script.js" ></script>
+
+    </body>
+</html>
